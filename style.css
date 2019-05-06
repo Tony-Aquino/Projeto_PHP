@@ -1,0 +1,327 @@
+html, body, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+h1 img {
+    display: block;
+}
+img {
+    border: 0;
+}
+a {
+    color: #464544;
+}
+a:hover {
+    color: #FFA405;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.more {
+    text-align: right;
+}
+.clear {
+    clear: both;
+}
+body {
+    background: 	#8B4513 repeat-x;
+    text-align: center;
+    font: 15px arial, sans-serif;
+    color: #E5D19C;
+    padding: 20px 0 0 0;
+}
+/*formato do texto e alinhamento*/
+#wrapper {
+    text-align: center;
+    margin: auto;
+    width: 678px;
+    position: relative;
+}
+#header {
+    padding-top: 1px;
+}
+/*cableçalho*/
+#header h1 {
+    font: 50px "Times new roman", serif;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    color: #FFFF00;
+    padding: 0 0 0 0.7em;
+    margin: -1em 0 0 0;
+    line-height: 1;
+}
+#nav-top {
+    margin-left: 503px;
+}
+#nav-top ul {
+    margin: 1em 0 0 0;
+    padding: 0;
+    height: 31px;
+}
+/*tamanho da caixa do login*/
+#nav-top li {
+    float: left;
+    background: #E5D19C no-repeat;
+    list-style: none;
+    text-align: center;
+    font: 20px "Times new roman", serif;
+    height: 29px;
+    line-height: 29px;
+}
+#nav-top li div {
+    background: top right  no-repeat;
+}
+/*largura do login*/
+#nav-top li#tab-cadastro {
+    width: 80px;
+
+}
+/*cor do login*/
+#nav-top a {
+    color: #0000FF;
+    text-decoration: none;
+}
+#nav-top a:hover {
+    color: red;
+}
+/*imagem principal*/
+#nav {
+    padding-top: 372px;
+    background: url(images/img1.jpg) no-repeat;
+}
+/*menu principal*/
+#nav ul {
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    line-height: 36px;
+    border-left: 2px solid #9E9479;
+    background: bottom left url(images/nav_lit.gif) repeat-x;
+}
+/*alinhamento do menu principal*/
+#nav li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+}
+#nav li.home {
+    background: bottom left url(images/nav_drk.gif) repeat-x;
+    padding-left: 25px;
+}
+/*cor da fonte do menu*/
+#nav a {
+    font: 16px "Times new roman", serif;
+    color: #FFFF00;
+    text-decoration: none;
+}
+/*animação do mause no menu*/
+#nav a:hover {
+    color: red;
+}
+
+#content {
+    padding-left: 20px;
+}
+/*titulos dos post*/
+#content h2 {
+    font: 24px "Times new roman", serif;
+    color: #FFFF00;
+    font-weight: normal;
+    /border-left: 3px solid black;
+    padding: 1px 1px 1px 8px;
+    margin-top: 22px;
+}
+/*alinhamento so do testo */
+#content p {
+    margin-left: 11px;
+    line-height: 1.4;
+}
+/*cores dos more e das raças dos cachorros*/
+#content a {
+    color: #E5D19C;
+    font-weight: bold;
+    text-decoration: none;
+}
+#content a:hover {
+    color: red;
+}
+/*alinhamento das raças*/
+#content .left-col {
+    float: left;
+    width: 522px;
+}
+/*alinhamento do hotel*/
+#content .right-col {
+    float: right;
+    width: 136px;
+}
+/*tamanho da fonte de quem somos e a cor*/
+#content #welcome {
+    margin-right: 40px;
+    font-size:18px;
+    color: #E5D19C;
+}
+/*cor da letra do texto de quem somos*/
+#content #welcome a{
+    color: #E5D19C;
+    text-decoration:underline;
+}
+#content #welcome a:hover{
+    color: #DBBF77;
+    text-decoration:underline;
+}
+#gallery {
+    margin-top: 14px;
+}
+#gallery .box {
+    float: left;
+    width: 119px;
+    padding: 0 23px 2.3em 23px;
+    margin-right: 1px;
+    background: #615331;
+    position: relative;
+}
+#gallery .box h3 {
+    text-align: center;
+    line-height: 23px;
+    font: 23px "Times new roman", serif;
+    color: #fff;
+    height: 23px;
+    margin-bottom: 20px;
+    background: top center url(images/tab_drk.gif) no-repeat;
+}
+#gallery .box p {
+    margin: 1em 0;
+    padding: 0;
+    line-height: 1.4;
+}
+#gallery .box .more {
+    height: 18px;
+    line-height: 18px;
+    background: #978040 top left url(images/moretab_left_drk.gif) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3.2em;
+    padding-right: 4px;
+    margin-bottom: 0;
+}
+#gallery .box .more a {
+    color: #4C330D;
+}
+#gallery .box .more a:hover {
+    color: #291B06;
+}
+#gallery .box-lit {
+    background: #735220;
+}
+#gallery .box-lit h3 {
+    background: top center url(images/tab_lit.gif) no-repeat;
+}
+#gallery .box-lit .more {
+    background: #B4A26D top left url(images/moretab_left_lit.gif) no-repeat;
+}
+/*alinhamento dos cachorros abandonados e alimento*/
+#content .right-col li, #content .right-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*os pontos sobre as raças*/
+#content .right-col li {
+    border-left: 1px solid red;
+    padding-left: 9px;
+    margin: 10px;
+}
+/*tipo de raça*/
+#content .right-col a {
+    font-size: 18px;
+    font-weight: normal;
+    color:#E5D19C;
+}
+/*animação do mouse nas raçãs*/
+#content .right-col a:hover {
+    color: red;
+}
+/** later **/''
+#later {
+    color: #564929;
+}
+/*titulo dos cachorro abandonados hotel e doação de ração*/
+#later h2 {
+    font-size: 20px;
+}
+#later .right-col p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+#later .box {
+    float: left;
+    width: 85px;
+}
+#later .box a{
+    text-decoration:underline;
+}
+#later #later-b1 {
+    padding-top: 67px;
+    margin-right: 4px;
+}
+#later #later-b2 {
+    width: 155px;
+    margin-right: 4px;
+}
+#later #later-b3 {
+    width: 114px;
+    margin-right: 6px;
+}
+#later #later-b4 {
+    padding-top: 67px;
+    width: 137px;
+}
+/*rodaper*/
+#footc {
+    height: 10px;
+}
+#footer {
+    background: #735220;
+    text-align: center;
+    color: #CFB472;
+    padding: 14px;
+}
+#dog2{
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -180px;
+
+}
+#dog3{
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -180px;
+}
+#dog4{
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: -180px;
+}
+#adote h2{
+    font: 50px "arial", sans-serif;
+    color: #FFFF00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+//teste da pagina de contato
+
