@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Adoção Legal</title>
+        <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1>Cadastrar</h1>
+                <div id="nav-top">
+                    <ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="nav">
+                    <ul>
+                        <li class="home"><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href= "adotar.html">Adotar</a></li>
+                        <li><a href= "contato.html">Contato</a></li>
+                    </ul></div>
+
+                <form action="recebecadastro.php" method="POST">
+
+                    <table width="625" border="0">
+                        <tr>
+                            <td width="69">Nome:</td>
+                            <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+                        </tr>
+                        <tr>
+                            <td>Sexo:</td>
+                            <td><input name="sexo" type="radio" value="Masculino" checked="checked" />
+                                Masculino 
+                                <input name="sexo" type="radio" value="Feminino" />
+                                Feminino 
+                        </tr>
+                        <tr>
+                            <td>DDD:</td>
+                            <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" />
+                                Telefone:
+                                <input name="telefone" type="text" id="telefone" />
+                        </tr>
+                        <tr>
+                            <td>Endere&ccedil;o:</td>
+                            <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+                        </tr>
+                        <tr>
+                            <td>Cidade:</td>
+                            <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+                        </tr>
+                        <tr>
+                            <td>Estado:</td>
+                            <td><select name="estado" id="estado">
+                                    <option>Selecione...</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="ES">ES</option>
+                                    <option value="DF">DF</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                        </tr>
+                        <tr>
+                            <td>Bairro:</td>
+                            <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+                        </tr>
+                        <tr>
+                            <td>Pa&iacute;s:</td>
+                            <td><input name="pais" type="text" id="pais" maxlength="20" />
+                        </tr>
+                        <tr>
+                            <td>Login:</td>
+                            <td><input name="login" type="text" id="login" maxlength="12" />
+                        </tr>
+                        <tr>
+                            <td>Senha:</td>
+                            <td><input name="senha" type="password" id="senha" maxlength="12" />
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
+                                Desejo receber novidades e informa&ccedil;&otilde;es sobre o conte&uacute;do deste site. </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>
+                                    <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" /> 
+                                    <br />
+                                    <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+                                    <br />
+                                    <a href="index.html"><input name="Voltar" type="button" id="Voltar" value="Voltar!" />
+                                </p>
+                                <p>&nbsp; </p></td>
+                        </tr>
+                    </table>
+                </form>
+
+
+                <div class="clear" id="footc"> </div>
+                <div id="footer"> Todos os parceiro são responsavél pelo seu serviços, o site só é um lugar de divulgação, não temos responsabilidade com os serviços prestados.</div>
+            </div>
+    </body></html>
