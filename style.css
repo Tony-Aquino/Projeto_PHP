@@ -133,9 +133,9 @@ body {
     font: 24px "Times new roman", serif;
     color: #FFFF00;
     font-weight: normal;
-    /border-left: 3px solid black;
+    /*border-left: 3px solid black;
     padding: 1px 1px 1px 8px;
-    margin-top: 22px;
+    margin-top: 22px;*/
 }
 /*alinhamento so do testo */
 #content p {
@@ -249,7 +249,7 @@ body {
 #content .right-col a:hover {
     color: red;
 }
-/** later **/''
+/** later **/
 #later {
     color: #564929;
 }
