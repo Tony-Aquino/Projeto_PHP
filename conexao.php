@@ -28,17 +28,16 @@ class conexao {
         }
     }
     
-    public function getNome($email){
-        $sql = "SELECT nome FROM cadastro WHERE email = :email";
+    public function getInfo($id){
+        $sql = "SELECT * FROM cadastro WHERE id = :id";
         $sql = $this->pdo->prepare($sql);
-        $sql->bindValue(':email',$email);
+        $sql->bindValue(':id',$id);
         $sql->execute();
         
         if($sql->rowCount()>0){
-            $info = $sql->fetch();
-            return$info['nome'];
+            return $sql->fetch();
         }else{
-            return '';
+            return array();
         }
     }
     public function getAll(){
@@ -51,13 +50,14 @@ class conexao {
             return array();
         }
     }
-    public function editar($nome,$email,$telefone,$endereco,$cidade,$bairro,$pais,$login,$senha){
-        if($this->existeEmail($email)==TRUE){
+    public function editar($id,$nome,$email,$telefone,$endereco,$cidade,$bairro,$pais,$login,$senha){
+        if(!empty($id)){
             $sql = "UPDATE cadastro "
                     . "SET nome = :nome,email= :email,telefone= :telefone,endereco = :endereco,"
                     . "cidade = :cidade,bairro = :bairro,pais = :pais,login = :login,senha= :senha "
-                    . "WHERE email = :email";
+                    . "WHERE id = :id";
             $sql = $this->pdo->prepare($sql);
+            $sql->bindValue(':id',$id);
             $sql->bindValue(':nome',$nome);
             $sql->bindValue(':email',$email);
             $sql->bindValue(':telefone',$telefone);
@@ -91,6 +91,50 @@ class conexao {
             return TRUE;
         }else{
             return false;;
+        }
+    }
+    public function logarSistema($login, $senha) {
+        
+        if ($this->emailExists($login) == TRUE && $this->senhaExists($senha) == TRUE) {
+            
+            $sql = "SELECT * FROM cadastro WHERE login = :login AND senha = :senha";
+            $sql = $this->pdo->prepare($sql);
+            $sql->bindValue(':login', $login);
+            $sql->bindValue(':senha', $senha);
+            $sql->execute();
+
+            if ($sql->rowCount() > 0) {
+                $array = $sql->fetch();
+                $_SESSION['id'] = $array['id'];
+                header("Location:index.html");
+            } 
+        }
+        return $array;
+    }
+
+    private function emailExists($login) {
+        $sql = "SELECT * FROM cadastro WHERE login = :login ";
+        $sql = $this->pdo->prepare($sql);
+        $sql->bindValue(':login', $login);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    private function senhaExists($senha) {
+        $sql = "SELECT * FROM cadastro WHERE senha = :senha ";
+        $sql = $this->pdo->prepare($sql);
+        $sql->bindValue(':senha', $senha);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

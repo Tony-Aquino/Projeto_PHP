@@ -1,8 +1,18 @@
 <html>
+<?php
+include 'conexao.php';
+$conexao = new conexao();
+
+if(!empty($_GET['id'])){
+    $id = $_GET['id'];
+    
+    $info = $conexao->getInfo($id);
+}  else {
+    header("Location: ListaUsuario.php");
+}
+?>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script src="mascara.js" type="text/javascript"></script>
-        <script src="mascara.min.js" type="text/javascript"></script>
         <title>Adoção Legal</title>
         <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
     </head>
@@ -24,30 +34,36 @@
                         <li><a href= "contato.html">Contato</a></li>
                     </ul></div>
 
-                <form action="recebecadastro.php" method="POST">
-
+                <form action="editaBanco.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $info['id'];?>">
                     <table width="625" border="0">
                         <tr>
                             <td width="69">Nome:</td>
-                            <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+                            <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60"
+                                                   value="<?php echo $info['nome'];?>"/>
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+                            <td><input name="email" type="text" id="email" size="70" maxlength="60"
+                                       value="<?php echo $info['email'];?>"/>
                         </tr>
                         <tr>
-                            <td>DDD/Telefone:</td>
-                            <td>
-                                <input type="text" class="form-control" name="telefone" id="celular" placeholder="Telefone" 
-                                       onkeyup="mascara('(##)#####-####',this,event,true)" maxlength="14">
+                            <td>DDD:</td>
+                            <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" 
+                                       value="<?php echo $info['ddd'];?>"/>
+                                Telefone:
+                                <input name="telefone" type="text" id="telefone"
+                                       value="<?php echo $info['telefone'];?>"/>
                         </tr>
                         <tr>
                             <td>Endere&ccedil;o:</td>
-                            <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+                            <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" 
+                                       value="<?php echo $info['endereco'];?>"/>
                         </tr>
                         <tr>
                             <td>Cidade:</td>
-                            <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+                            <td><input name="cidade" type="text" id="cidade" maxlength="20" 
+                                       value="<?php echo $info['cidade'];?>"/>
                         </tr>
                         <tr>
                             <td>Estado:</td>
@@ -83,19 +99,23 @@
                         </tr>
                         <tr>
                             <td>Bairro:</td>
-                            <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+                            <td><input name="bairro" type="text" id="bairro" maxlength="20"
+                                       value="<?php echo $info['bairro'];?>"/>
                         </tr>
                         <tr>
                             <td>Pa&iacute;s:</td>
-                            <td><input name="pais" type="text" id="pais" maxlength="20" />
+                            <td><input name="pais" type="text" id="pais" maxlength="20"
+                                       value="<?php echo $info['pais'];?>"/>
                         </tr>
                         <tr>
                             <td>Login:</td>
-                            <td><input name="login" type="text" id="login" maxlength="12" />
+                            <td><input name="login" type="text" id="login" maxlength="12" 
+                                       value="<?php echo $info['login'];?>"/>
                         </tr>
                         <tr>
                             <td>Senha:</td>
-                            <td><input name="senha" type="password" id="senha" maxlength="12" />
+                            <td><input name="senha" type="password" id="senha" maxlength="12"
+                                       />
                         </tr>
                         <tr>
                             <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />

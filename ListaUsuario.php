@@ -52,7 +52,7 @@ $contato = new conexao();
                         <td><?php echo $item['pais'];?></td>
                         <td><?php echo $item['login'];?></td>
                         <td>
-                            <a style="color: yellow;" href="editar.php?id=<?php echo$item['id'];?>">[EDITAR]</a>
+                            <a style="color: yellow;" href="editarCadastro.php?id=<?php echo$item['id'];?>">[EDITAR]</a>
                             <a style="color: yellow;" href="excluir.php?id=<?php echo$item['id'];?>">[EXCUIR]</a>
                         </td>
                     </tr>

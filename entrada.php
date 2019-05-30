@@ -1,23 +1,14 @@
 <?php
     session_start();//Inicia uma nova sessão ou resume uma sessão existente
     include 'conexao.php';
-    $login=$_GET['login'];//obtém o login digitado
-    $senha=$_GET['senha'];//obtém a senha digitada
-      
+    $logar = new conexao();
     //verificação de login e senha estão corretos
-    $tenta_achar = "SELECT * FROM cadastro WHERE login='$login' AND senha='$senha'" ;
-    $resultado = $conn->query($tenta_achar);
-    if ($resultado->num_rows > 0) {
-        $_SESSION['login'] = $login;
-        $_SESSION['senha'] = $senha;
-        header('location:acesso.php');//redireciona para a página de acesso
+    if(!empty($_POST['login'])){
+        $login=$_POST['login'];//obtém o login digitado
+        $senha=$_POST['senha'];//obtém a senha digitada
+      
+        //verificação de login e senha estão corretos
+        $logar->logarSistema($login, $senha);
+        header("Location index.php");
     }
-    else{
-        session_unset();//remove todas as variáveis de sessão
-        session_destroy();//destroi a sessão
-        echo "<script> 
-                alert('Login ou senha incorreto');
-                window.location.href = 'login.html';
-            </script>";
-      }
 ?>
