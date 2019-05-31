@@ -48,11 +48,10 @@ if(!empty($_GET['id'])){
                                        value="<?php echo $info['email'];?>"/>
                         </tr>
                         <tr>
-                            <td>DDD:</td>
-                            <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" 
-                                       value="<?php echo $info['ddd'];?>"/>
-                                Telefone:
-                                <input name="telefone" type="text" id="telefone"
+                                <td>DDD/Telefone:</td>
+                            <td>
+                                <input type="text" class="form-control" name="telefone" id="celular" placeholder="61991919191" 
+                                       onkeyup="mascara('(##)#####-####',this,event,true)" maxlength="14" 
                                        value="<?php echo $info['telefone'];?>"/>
                         </tr>
                         <tr>
