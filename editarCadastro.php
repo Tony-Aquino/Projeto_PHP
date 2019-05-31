@@ -123,7 +123,7 @@ if(!empty($_GET['id'])){
                         </tr>
                         <tr>
                             <td colspan="2"><p>
-                                    <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" /> 
+                                    <input name="cadastrar" type="submit" id="cadastrar" value="Salvar alteração" /> 
                                     <br />
                                     <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
                                     <br />
