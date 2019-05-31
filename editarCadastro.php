@@ -40,7 +40,7 @@ if(!empty($_GET['id'])){
                         <tr>
                             <td width="69">Nome:</td>
                             <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60"
-                                                   value="<?php echo $info['nome'];?>"/>
+                                                   value="<?php echo $info['nome']; ?>"/>
                         </tr>
                         <tr>
                             <td>Email:</td>
