@@ -12,8 +12,8 @@ $contato = new conexao();
         <script language="Javascript">
             function confirmacao(id) {
                 var resposta = confirm("Deseja remover esse registro?");
-
-                if (resposta == true) {
+alert (resposta);
+                if (resposta === true) {
                     window.location.href = "index.html";
                 } else
                     window.location.href = "ListaUsuario.php";
