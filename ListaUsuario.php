@@ -5,9 +5,20 @@ $contato = new conexao();
 ?>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Adoção Legal</title>
         <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+        <script language="Javascript">
+function confirmacao(id) {
+     var resposta = confirm("Deseja remover esse registro?");
+ 
+     if (resposta == true) {
+          window.location.href = "index.html";
+     }else
+         window.location.href= "ListaUsuario.php";
+}
+</script>
     </head>
     <body>
         <div id="wrapper">
@@ -53,13 +64,18 @@ $contato = new conexao();
                             <td><?php echo $item['pais']; ?></td>
                             <td><?php echo $item['login']; ?></td>
                             <td>
-                                <a style="color: yellow;" href="editarCadastro.php?id=<?php echo$item['id']; ?>">[EDITAR]</a>
-                                <a style="color: yellow;" href="excluir.php?id=<?php echo$item['id']; ?>">[EXCUIR]</a>
+                                
+                                <a style="color: yellow;" href="editarCadastro.php?id=
+                                    <?php echo$item['id']; ?>">EDITAR</a>
+                                <a style="color: yellow;"onclick="confirmacao('1')" href="excluir.php?id=
+                                    <?php echo$item['id']; ?>">EXCUIR</a>
                             </td>
                         </tr>
 <?php endforeach; ?>
                 </table>
                 <div class="clear" id="footc"> </div>
-                <div id="footer"> Todos os parceiro são responsavél pelo seu serviços, o site só é um lugar de divulgação, não temos responsabilidade com os serviços prestados.</div>
+                <div id="footer"> Todos os parceiro são responsavél pelo seu serviços, 
+                    o site só é um lugar de divulgação, não temos responsabilidade com 
+                    os serviços prestados.</div>
             </div>
     </body></html>

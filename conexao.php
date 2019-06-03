@@ -114,7 +114,7 @@ class conexao {
             if ($sql->rowCount() > 0) {
                 $array = $sql->fetch();
                 $_SESSION['id'] = $array['id'];
-                header("Location:index.html");
+                header("Location:site.php");
             }
         }
         return $array;

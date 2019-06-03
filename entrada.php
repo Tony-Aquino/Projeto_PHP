@@ -9,6 +9,6 @@ if (!empty($_POST['login'])) {
     $senha = $_POST['senha']; //obtém a senha digitada
     //verificação de login e senha estão corretos
     $logar->logarSistema($login, $senha);
-    header("Location index.php");
+    header("Location site.php");
 }
 ?>

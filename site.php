@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Adoção Legal</title>
+        <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1>Adoção Legal</h1>
+                <div id="nav-top">
+                    <ul>
+                    </ul>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li class="home"><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href= "adotar.html">Adotar</a></li>
+                        <li><a href= "contato.html">Contato</a></li>
+                        <li><a href= "login.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <div class="left-col">
+                    <div id="welcome">
+                        <h2>Bem Vindos</h2>
+                        <p>Somos um site onde você poderá cadastrar o seu animal, o qual, 
+                            por algum motivo não possa cuidar. Assim, evitará abandoná-lo ou 
+                            que o mesmo seja levado para abrigos, sabendo-se que
+                            abrigos já estão em capacidade máxima.</p>
+                        <p>Aqui também podem ser registrados animais que precisam ser resgatdos e também fazer a solicitação de lar temporário para eles.</p>
+                        <p><a href="sobre.html">more...</a></p>
+                    </div>
+
+                    <h2>Galeria de Fotos...</h2>
+                    <div id="gallery">
+                        <div class="box">
+
+                            <h3>01</h3>
+                            <img src="images/pic_1.jpg" alt="Pic 1" height="84" width="119" />
+                            <p>Esse é o bobe, foi encontrado em tal lugar...... e foi adotado. Já
+                                está vivendo com uma familia maravilhosa.</p>
+                            <p class="more"><a href="manutencao.html">more</a></p>
+                        </div>
+
+                        <div class="box box-lit">
+
+                            <h3>02</h3>
+                            <img src="images/pic_2.jpg" alt="Pic 2" height="84" width="119" />
+                            <p>Esse é o bobe, foi enocntrado em tal lugar...... e foi adotado já
+                                vivendo com uma familia maravilhosa.</p>
+                            <p class="more"><a href="manutencao.html">more</a></p>
+                        </div>
+
+                        <div class="box">
+
+                            <h3>03</h3>
+                            <img src="images/pic_3.jpg" alt="Pic 3" height="84" width="119" />
+                            <p>Esse é o bobe, foi enocntrado em tal lugar...... e foi adotado já
+                                vivendo com uma familia maravilhosa.</p>
+                            <p class="more"><a href="manutencao.html">more</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-col">
+
+                    <h2>Tudo Sobre as Raças.</h2><ul>
+                        <li><a href="http://tudosobrecachorros.com.br/beagle/">Beagle
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/boxer/">Boxer
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/buldogue-frances/">Bulldog
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/chihuahua/">Chihuahua
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/daschund/">Dachshund
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/pastor-alemao/">Pastro Alemão
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/golden-retriever/">Golden Retriever
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/labrador/">Labrador Retriever
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/maltes/">Maltese
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/poodle-gigante-medio-anao-e-toy/">Poodle
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/lulu-da-pomerania-spitz-alemao-anao/">Pomeranian
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/american-pitbull-terrier/">Pitbull
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/pug/">Pug
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/rottweiler/">Rottweiler
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/shih-tzu/">Shih Tzu
+                            </a></li>
+                        <li><a href="http://tudosobrecachorros.com.br/yorkshire-terrier/">Yorkie
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="clear"> </div>
+                <div id="later">
+                    <div class="left-col">
+                        <div class="box"
+                             id="later-b1">
+                            <img src="images/pic_4.jpg" alt="Pic 4" height="175" width="92" />
+                        </div>
+
+                        <div class="box"
+                             id="later-b2">
+                            <h2>Cachorro Abandonado</h2>
+                            <p>Foi visto um cachorro abandonado no local tal....quem puder ajuda-lo</p>
+                            <p>ou quem puder dar um lar temporario também será bem vindo toda a juda é bem vinda
+                                <a href="contato.html">contato</a>..</p>
+                            <p class="more"><a href="manutencao.html">mais....</a></p>
+                        </div>
+
+                        <div class="box" id="later-b3">
+                            <h2>Doe Alimento</h2>
+                            <p>Se você não tem como resgatar um animal ou adotar você pode efetuar doações para o abrigos, esse site apoia o abrigo Flora e Fauna</p>
+                            <p class="more"><a href="http://www.abrigofloraefauna.org.br/">Site do abrigo</a></p>
+                        </div>
+
+                        <div class="box"
+                             id="later-b4">
+                            <img src="images/pic_5.jpg" alt="Pic 5" height="166" width="137" />
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+
+                    <div class="right-col">
+                        <h2>Hotel para cachorro</h2>
+                        <p>Vai viajar? Aqui esta um lugar ideal para deixar seu pet.
+                            <a href=""><site/a>.</p>
+                                    <p class="more"><a href="manutencao.html">more...</a></p>
+                                    </div>
+
+                                    <div class="clear"> </div>
+                                    </div>
+                                    </div>
+                                    <div class="clear" id="footc"> </div>
+                                    <div id="footer"> Todos os parceiro são responsavél pelo seu serviços, o site só é um lugar de divulgação, não temos responsabilidade com os serviços prestados.</div>
+                                    </div>
+                                    </body>
+                                    </html>
